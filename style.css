@@ -1,0 +1,47 @@
+* {
+  font-family: 'PT serif', 'Georgia', serif;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  margin: 0;
+  background-color: floralwhite;
+  color: #111;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid #111;
+}
+
+header > p {
+  font-style: italic;
+}
+
+main {
+  background: floralwhite;
+  padding-top: 40px;
+}
+
+.posts {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 15px;
+  border: 1px solid #111;
+  border-radius: 5px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+article h4 {
+  margin: 15px 0 0 0;
+}
+
+time {
+  font-style: italic;
+  color: #666;
+}
