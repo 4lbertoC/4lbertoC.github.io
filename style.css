@@ -33,6 +33,7 @@ article {
   border: 1px solid #ccc;
   line-height: 1.5em;
   margin-bottom: 40px;
+  box-shadow: 5px 5px 5px #ccc;
 }
 
 article h4 {
