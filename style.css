@@ -5,8 +5,8 @@
 
 html, body {
   margin: 0;
-  background-color: floralwhite;
-  color: #111;
+  color: #333;
+  font-size: 1.1em;
 }
 
 header {
@@ -29,11 +29,10 @@ main {
 }
 
 article {
+  background: floralwhite;
   padding: 15px;
-  border: 1px solid #111;
-  border-radius: 5px;
+  border: 1px solid #ccc;
   line-height: 1.5em;
-  font-size: 1.1em;
   margin-bottom: 40px;
 }
 
