@@ -1,4 +1,4 @@
-var CACHE_NAME = '4lbertoc.github.io';
+var CACHE_NAME = '4lbertoc.github.io-v1';
 var urlsToCache = [
   '/',
   '/?source=pwa',
