@@ -1,6 +1,8 @@
 var CACHE_NAME = '4lbertoc.github.io';
 var urlsToCache = [
   '/',
+  '/?source=pwa',
+  '/index.html',
   '/images/DomainToken-Arcane.png',
   '/images/DomainToken-Environment.png',
   '/images/DomainToken-Matter.png',
