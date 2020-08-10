@@ -7,7 +7,7 @@ var urlsToCache = [
   '/images/DomainToken-Reality.png',
   '/images/Screenshot-board.jpg',
   '/images/TTS Thumbnail.jpg',
-  '/styles.css'
+  '/style.css'
 ];
 
 self.addEventListener('install', function(event) {
