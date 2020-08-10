@@ -5,7 +5,7 @@ var urlsToCache = [
   '/images/DomainToken-Environment.png',
   '/images/DomainToken-Matter.png',
   '/images/DomainToken-Reality.png',
-  '/images/Screenshot-board.png',
+  '/images/Screenshot-board.jpg',
   '/images/TTS Thumbnail.jpg',
   '/styles.css'
 ];
