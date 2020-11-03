@@ -1,0 +1,176 @@
+.card-wrapper {
+  width: 200px;
+  height: 200px;
+  left: 0;
+  top: 0;
+  transition: 0.5s all;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.5s all;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.card-hover {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s all;
+  position: relative;
+}
+
+.card-wrapper:hover .card-hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card--rotated90deg {
+  transform: rotateZ(90deg);
+}
+
+.card--rotated180deg {
+  transform: rotateZ(180deg);
+}
+
+.card--rotated270deg {
+  transform: rotateZ(-90deg);
+}
+
+.card--rotated90deg-flipped {
+  transform: rotateZ(90deg) rotateY(180deg);
+}
+
+.card--rotated180deg-flipped {
+  transform: rotateZ(180deg) rotateY(180deg);
+}
+
+.card--rotated270deg-flipped {
+  transform: rotateZ(-90deg) rotateY(180deg);
+}
+
+.Location {
+  top: 100px;
+  left: 50px;
+}
+
+.Adventurer-first-position {
+  top: 100px;
+  left: 270px;
+}
+
+.Adventurer-second-position {
+  top: 100px;
+  left: 490px;
+}
+
+.Adventurer-third-position {
+  top: 100px;
+  left: 710px;
+}
+
+.Location .card-front {
+  background-size: contain;
+  background-image: url('./assets/Location.png');
+}
+
+.Collector .card-front {
+  background-size: contain;
+  background-image: url('./assets/Collector.png');
+}
+
+.Collector .card-back {
+  background-size: contain;
+  background-image: url('./assets/Collector (back).png');
+}
+
+.Defender .card-front {
+  background-size: contain;
+  background-image: url('./assets/Defender.png');
+}
+
+.Defender .card-back {
+  background-size: contain;
+  background-image: url('./assets/Defender (back).png');
+}
+
+.Strategist .card-front {
+  background-size: contain;
+  background-image: url('./assets/Strategist.png');
+}
+
+.Strategist .card-back {
+  background-size: contain;
+  background-image: url('./assets/Strategist (back).png');
+}
+
+.card-actions {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper:hover .card-actions {
+  display: flex;
+}
+
+.Result-location {
+  top: calc(100vh + 300px);
+  left: calc(50vw - 100px);
+}
+
+.Result-location .card-front {
+  background-size: contain;
+  background-image: url('./assets/Result.png');
+}
+
+.result-indicator {
+  position: absolute;
+  border: 4px dashed yellow;
+  width: 50px;
+  height: 105px;
+  opacity: 0;
+  z-index: 1;
+  top: 247px;
+  left: 44px;
+}
+
+.Result-adventurer1,
+.Result-adventurer2,
+.Result-adventurer3 {
+  width: 200px;
+  height: 88px;
+}
+
+.Result-adventurer1 .card-front {
+  background-size: contain;
+  background-image: url('./assets/Result-1.png');
+}
+
+.Result-adventurer2 .card-front {
+  background-size: contain;
+  background-image: url('./assets/Result-2.png');
+}
+
+.Result-adventurer3 .card-front {
+  background-size: contain;
+  background-image: url('./assets/Result-3.png');
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arcane Mind - Expedition Tutorial</title>
+    <link rel="stylesheet" href="style-cards.css" />
+    <link rel="stylesheet" href="style-tutorial.css" />
+    <link rel="stylesheet" href="style-pages.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        background: url('./assets/wood1.jpg') repeat;
+        overflow-y: hidden;
+      }
+      * {
+        font-family: 'Spectral', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-area">
+      <div id="game-area-tutorial-page-modifier" class="p0">
+        <div class="card-wrapper Location">
+          <div class="card">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="button-rotateClockwise">Rotate ↪️</button>
+            <button class="button-rotateCounterclockwise">Rotate ↩️</button>
+          </div>
+        </div>
+        <div class="card-wrapper Adventurer-first-position Adventurer">
+          <div class="card Collector">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="button-rotateClockwise">Rotate ↪️</button>
+            <button class="button-rotateCounterclockwise">Rotate ↩️</button>
+            <button class="button-swapLeft">Swap ⬅️</button>
+            <button class="button-swapRight">Swap ➡️</button>
+          </div>
+        </div>
+        <div class="card-wrapper Adventurer-second-position Adventurer">
+          <div class="card Defender">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="button-rotateClockwise">Rotate ↪️</button>
+            <button class="button-rotateCounterclockwise">Rotate ↩️</button>
+            <button class="button-swapLeft">Swap ⬅️</button>
+            <button class="button-swapRight">Swap ➡️</button>
+          </div>
+        </div>
+        <div class="card-wrapper Adventurer-third-position Adventurer">
+          <div class="card Strategist">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="button-rotateClockwise">Rotate ↪️</button>
+            <button class="button-rotateCounterclockwise">Rotate ↩️</button>
+            <button class="button-swapLeft">Swap ⬅️</button>
+            <button class="button-swapRight">Swap ➡️</button>
+          </div>
+        </div>
+        <div class="card-wrapper Result-location">
+          <div class="card">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper Result-adventurer1">
+          <div class="card">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper Result-adventurer2">
+          <div class="card">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper Result-adventurer3">
+          <div class="card">
+            <div class="card-hover">
+              <div class="card-face card-front"></div>
+              <div class="card-face card-back"></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-indicator" id="location-result-indicator"></div>
+      </div>
+    </div>
+
+    <div id="tutorial">
+      <div id="tutorial-pages">
+        <div class="tutorial-page tutorial-page--current">
+          <p>Welcome to Arcane Mind's Expedition tutorial!</p>
+          <p>Click "Next" and "Previous" to navigate the tutorial pages. You can also use the left and right keys on your keyboard.</p>
+        </div>
+        <div class="tutorial-page">
+          <p>The expedition is a phase of a player's turn. During this phase, a party of adventurers will try to gather reagents for you, the players.</p>
+        </div>
+        <div class="tutorial-page">
+          <p>Expeditions take place in a land. There is a card for each land. The icon clusters on the edges of the land card represents the possible outcomes of a single expedition.</p>
+        </div>
+        <div class="tutorial-page"><p>Some symbols represent the reagents that the adventurers can find. There are two kinds of reagents: oddities and mementos. You need reagents to study the domains of magic.</p>
+          <p>
+            <div class="tutorial-image">
+              <img src="assets/Oddity.png" alt="Oddity">
+              <div class="tutorial-image-caption">Oddity</div>
+            </div>
+            <div class="tutorial-image">
+              <img src="assets/Memento.png" alt="Memento">
+              <div class="tutorial-image-caption">Memento</div>
+            </div>
+          </p>
+        </div>
+        <div class="tutorial-page"><p>Adventurers can also find artifacts. Artifacts are used to cast more powerful spells.</p>
+          <p>
+            <div class="tutorial-image">
+              <img src="assets/Artifact.png" alt="Oddity">
+              <div class="tutorial-image-caption">Artifact</div>
+            </div>
+          </p>
+        </div>
+        <div class="tutorial-page"><p>Expeditions can be dangerous and adventurers might come back wounded. If a red cross appears, an adventurer might get a wound if the party doesn't manage to counteract it with their skills. Wounded adventurers cannot take part in the next expedition.</p>
+          <p>
+            <div class="tutorial-image">
+              <img src="assets/wound.png" alt="Wound">
+              <div class="tutorial-image-caption">Wound</div>
+            </div>
+          </p>
+        </div>
+        <div class="tutorial-page"><p>So for example, the outcome in the bottom-right position means that adventurers have found two oddities.</p>
+        </div>
+        <div class="tutorial-page"><p>Each adventurer has a different set of skills that they can use to optimise the outcome of the expedition.</p>
+          <p>
+            You can read more about adventurer skills in the Appendix of the <a href="https://docs.google.com/document/d/1-cJ71huA_q9MuMFZ9O58aKzP4WIhteUizobMLmSaxNA/edit?usp=sharing" target="_blank">game manual</a>.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            There are three types of adventurers: collectors (red), defenders (blue) and strategists (yellow). An expedition party is made of one adventurer of each type.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            Location and adventurer cards are placed in a row on the expedition board. For each of the cards you are going to draw a result card.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            Result cards are placed below the location and adventurer cards, and indicate the outcome of that specific card for the current expedition.
+          </p>
+          <p>Result cards have a fixed rule: the outcome on the left has high chance of showing up, the outcome on the right has medium chance and the middle has low chance.</p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            These are the basic concepts. Let's have a look at the steps of an expedition.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            First of all, you have to pick a location card. There are four in total in the game.  Let's assume that the "Mystical Forest" is the location that you want to use now. Once you have chosen the location, you can orient it in the direction that you prefer.
+          </p>
+          <p>
+            Try this now. Hover on the location card, you will see the controls. Once you are satisfied, click "Next".
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            Once you've done that, choose the order of your adventurers. Hover on the adventurer cards to move them around. The order of the adventurer cards is important because this determines which adventurer gets wounded based on the location outcome.
+          </p>
+          <p>For example, if the location's result card points at the outcome on the left and this location outcome contains a wound, the adventurer on the left will get wounded. Only the outcome that the result card points at counts for wounds.</p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            It's time to draw a result for the location card. The outcome that the card points at is the one on the bottom-left. At this point it's not possible to rotate the location anymore.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            Now that we know what the adventurers are going to face, it's their time to get the most out of the expedition. You cannot swap the adventurers anymore, but you can rotate them in the orientation that you prefer, so that the side that you want to use is at the bottom.
+          </p>
+          <p>
+            Go on and rotate the adventurers now!
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            The final step is the resolution of the adventurer cards. Draw a result card for each adventurer, but don't place them as close as you put the location. Result cards for adventurers come into play in "pending" mode. You are going to decide in which order you want to resolve them. This is important because adventurers can affect the outcome of their companions!
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            Here you can see that result cards can also have modifiers. Some modifiers require you to rotate the adventurer or location card, or allow you to draw an inspiration card.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            One by one, resolve the result cards in the order you prefer. For example, I decide to start from the adventurer in the rightmost position. As indicated by the result card, I have to rotate the card by 90 degrees clockwise.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            Then I resolve the adventurer in the leftmost position. I have to rotate this card by 180 degrees.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            And finally the adventurer in the middle position. This adventurer will additionally earn an inspiration card.
+          </p>
+        </div>
+        <div class="tutorial-page">
+          <p>
+            And this is the expedition phase! Experiment a bit with rotations and positions, and look up in the manual the meanings of the adventurer skills.
+          </p>
+          <p>
+            If you have any questions, feel free to reach out using the <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0TbH90OWd1XOsPxT6wqMP6Nsi6FuWJlJVxVroQG5hDuMuew/viewform">Google Form</a>.
+          </p>
+        </div>
+      </div>
+      <div class="tutorial-controls">
+        <button class="button-tutorialPrevious">Previous ⬅️</button>
+        <button class="button-tutorialNext">Next ➡️</button>
+      </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>

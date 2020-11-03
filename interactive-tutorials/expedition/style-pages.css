@@ -1,0 +1,229 @@
+#game-area-tutorial-page-modifier.p0 .card-wrapper {
+  pointer-events: none;
+  top: calc(100vh + 300px);
+  left: calc(50vw - 100px);
+  transform: rotateZ(270deg) rotateY(180deg);
+}
+
+#game-area-tutorial-page-modifier.p2 .Location {
+  opacity: 1;
+  left: calc(50vw - 100px);
+  top: 100px;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px yellow;
+  border-radius: 5px;
+}
+
+#game-area-tutorial-page-modifier.p7 .Location {
+  top: 100px;
+  left: 50px;
+  transform: scale(1);
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#game-area-tutorial-page-modifier.p7 .Adventurer-first-position {
+  opacity: 1;
+  left: calc(50vw - 100px);
+  top: 100px;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px yellow;
+  border-radius: 5px;
+}
+
+#game-area-tutorial-page-modifier.p8 .Adventurer-first-position {
+  left: calc(20vw - 100px);
+  top: 100px;
+  transform: scale(1.5) rotateY(180deg);
+  animation: 1s adventurer-presentation;
+}
+#game-area-tutorial-page-modifier.p8 .Adventurer-second-position {
+  opacity: 1;
+  left: calc(50vw - 100px);
+  top: 100px;
+  transform: scale(1.5) rotateY(180deg);
+  animation: 1s adventurer-presentation;
+  box-shadow: 0 0 10px yellow;
+}
+#game-area-tutorial-page-modifier.p8 .Adventurer-third-position {
+  opacity: 1;
+  left: calc(80vw - 100px);
+  top: 100px;
+  transform: scale(1.5) rotateY(180deg);
+  animation: 1s adventurer-presentation;
+  box-shadow: 0 0 10px yellow;
+}
+
+@keyframes adventurer-presentation {
+  0% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.5) rotateY(180deg);
+  }
+}
+
+#game-area-tutorial-page-modifier.p9 .Adventurer-first-position {
+  top: 100px;
+  left: 270px;
+  transform: none;
+  box-shadow: none;
+}
+#game-area-tutorial-page-modifier.p9 .Adventurer-second-position {
+  top: 100px;
+  left: 490px;
+  transform: none;
+  box-shadow: none;
+}
+#game-area-tutorial-page-modifier.p9 .Adventurer-third-position {
+  top: 100px;
+  left: 710px;
+  transform: none;
+  box-shadow: none;
+}
+
+#game-area-tutorial-page-modifier.p10 .Location {
+  left: calc(50vw - 100px);
+  top: 100px;
+  transform: scale(1.5);
+  z-index: 1;
+  box-shadow: 0 0 10px yellow;
+}
+#game-area-tutorial-page-modifier.p10 .Result-location {
+  width: 200px;
+  height: 88px;
+  opacity: 1;
+  left: calc(50vw - 100px);
+  top: 380px;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px yellow;
+}
+
+#game-area-tutorial-page-modifier.p11 .Location {
+  box-shadow: none;
+  transform: none;
+  top: 100px;
+  left: 50px;
+}
+
+#game-area-tutorial-page-modifier.p11 .Result-location {
+  box-shadow: none;
+  transform: none;
+  top: calc(100vh + 300px);
+  left: calc(50vw - 100px);
+}
+
+#game-area-tutorial-page-modifier.p12 .Location {
+  pointer-events: all;
+  z-index: 0;
+}
+
+#game-area-tutorial-page-modifier.p12 .Adventurer {
+  opacity: 0.5;
+}
+
+#game-area-tutorial-page-modifier.p13 .Location {
+  pointer-events: none;
+  opacity: 0.5;
+}
+#game-area-tutorial-page-modifier.p13 .Adventurer {
+  pointer-events: all;
+  opacity: 1;
+}
+#game-area-tutorial-page-modifier.p13 .Adventurer .button-rotateClockwise,
+#game-area-tutorial-page-modifier.p13 .Adventurer .button-rotateCounterclockwise {
+  display: none;
+}
+
+#game-area-tutorial-page-modifier.p14 .Location {
+  opacity: 1;
+}
+#game-area-tutorial-page-modifier.p14 .Adventurer {
+  pointer-events: none;
+}
+#game-area-tutorial-page-modifier.p14 .Result-location {
+  box-shadow: none;
+  transform: scale(1);
+  top: 310px;
+  left: 50px;
+}
+
+#game-area-tutorial-page-modifier.p14 #location-result-indicator {
+  opacity: 1;
+  animation: 0.5s result-indicator-animation alternate;
+  animation-iteration-count: 4;
+}
+
+@keyframes result-indicator-animation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#game-area-tutorial-page-modifier.p15 #location-result-indicator {
+  display: none;
+}
+#game-area-tutorial-page-modifier.p15 .Adventurer {
+  pointer-events: all;
+}
+#game-area-tutorial-page-modifier.p15 .Adventurer .button-swapLeft,
+#game-area-tutorial-page-modifier.p15 .Adventurer .button-swapRight {
+  display: none;
+}
+#game-area-tutorial-page-modifier.p15 .Adventurer .button-rotateClockwise,
+#game-area-tutorial-page-modifier.p15 .Adventurer .button-rotateCounterclockwise {
+  display: inline;
+}
+#game-area-tutorial-page-modifier.p15 .Result-location,
+#game-area-tutorial-page-modifier.p15 .Location {
+  opacity: 0.5;
+}
+
+#game-area-tutorial-page-modifier.p16 .Adventurer {
+  pointer-events: none;
+}
+#game-area-tutorial-page-modifier.p16 .Result-location,
+#game-area-tutorial-page-modifier.p16 .Location {
+  opacity: 1;
+}
+#game-area-tutorial-page-modifier.p16 .Result-adventurer1 {
+  opacity: 1;
+  top: 350px;
+  left: 270px;
+  transform: none;
+}
+#game-area-tutorial-page-modifier.p16 .Result-adventurer2 {
+  opacity: 1;
+  top: 350px;
+  left: 490px;
+  transform: none;
+}
+#game-area-tutorial-page-modifier.p16 .Result-adventurer3 {
+  opacity: 1;
+  top: 350px;
+  left: 710px;
+  transform: none;
+}
+
+#game-area-tutorial-page-modifier.p18 .Result-adventurer3 {
+  top: 310px;
+}
+#game-area-tutorial-page-modifier.p18 .Adventurer-third-position {
+  transform: rotateZ(90deg);
+}
+
+#game-area-tutorial-page-modifier.p19 .Result-adventurer1 {
+  top: 310px;
+}
+#game-area-tutorial-page-modifier.p19 .Adventurer-first-position {
+  transform: rotateZ(180deg);
+}
+
+#game-area-tutorial-page-modifier.p20 .Result-adventurer2 {
+  top: 310px;
+}
